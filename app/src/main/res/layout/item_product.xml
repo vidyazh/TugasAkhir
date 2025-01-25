@@ -48,6 +48,7 @@
             android:layout_alignStart="@id/img_product" />
 
         <RelativeLayout
+            android:id="@+id/layout_jenis_tipe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/title_product"
@@ -77,6 +78,57 @@
             android:layout_alignStart="@id/divider_2"
             android:layout_marginStart="20dp"/>
         </RelativeLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/deskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deskripsi"
+        android:layout_alignStart="@id/title_product"
+        android:layout_below="@id/layout_jenis_tipe"
+        android:layout_marginTop="10dp"/>
+
+        <RelativeLayout
+            android:id="@+id/detail_tersedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deskripsi"
+            android:layout_alignStart="@+id/deskripsi"
+            android:layout_marginTop="10dp">
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tersedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tersedia"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jumlah_tersedia"
+                android:layout_toEndOf="@+id/tersedia"
+                style="@style/TextAppearance.M3.Sys.Typescale.TitleSmall"
+                android:layout_marginStart="10dp"/>
+        </RelativeLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/kg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kg"
+            android:layout_below="@+id/detail_tersedia"
+            android:layout_marginTop="10dp"
+            android:layout_alignStart="@id/detail_tersedia"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kg"
+            android:text="@string/harga"
+            android:layout_alignStart="@+id/kg"
+            android:layout_marginTop="5dp"
+            style="@style/TextAppearance.M3.Sys.Typescale.TitleSmall"/>
 
     </RelativeLayout>
 

@@ -6,4 +6,9 @@
     <string name="nama_produk">Nama Produk</string>
     <string name="jenis_produk">Jenis Produk</string>
     <string name="tipe_produk">Tipe Produk</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="tersedia">Tersedia:</string>
+    <string name="jumlah_tersedia">Jumlah Tersedia</string>
+    <string name="kg">(/kg)</string>
+    <string name="harga">Harga</string>
 </resources>
