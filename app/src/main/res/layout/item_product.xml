@@ -112,23 +112,27 @@
         </RelativeLayout>
 
         <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detail_tersedia"
+            android:text="@string/harga"
+            android:layout_alignStart="@+id/kg"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            style="@style/TextAppearance.M3.Sys.Typescale.TitleSmall"/>
+        
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/kg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/kg"
-            android:layout_below="@+id/detail_tersedia"
-            android:layout_marginTop="10dp"
+            android:layout_below="@+id/harga"
+            android:layout_marginTop="5dp"
             android:layout_alignStart="@id/detail_tersedia"
             />
 
-        <com.google.android.material.textview.MaterialTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/kg"
-            android:text="@string/harga"
-            android:layout_alignStart="@+id/kg"
-            android:layout_marginTop="5dp"
-            style="@style/TextAppearance.M3.Sys.Typescale.TitleSmall"/>
+
 
     </RelativeLayout>
 
