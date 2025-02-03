@@ -23,4 +23,10 @@
     <string name="kirim_pesan">Kirim Pesan</string>
     <string name="image">image</string>
     <string name="ubah_produk">Ubah Produk</string>
+    <string name="ulasan">Ulasan :</string>
+    <string name="txt_ulasan">500</string>
+    <string name="baca_ulasan">Baca Ulasan</string>
+    <string name="pengguna">Pengguna</string>
+    <string name="isi_pesan">Isi Pesan ...</string>
+    <string name="icon_profil">Icon Profil</string>
 </resources>
