@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.project.tugasakhir"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.project.tugasakhir"

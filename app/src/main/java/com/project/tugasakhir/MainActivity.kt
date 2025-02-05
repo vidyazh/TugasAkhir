@@ -6,7 +6,6 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import com.project.tugasakhir.Account.AccountFragment
-import com.project.tugasakhir.Article.ArticleFragment
 import com.project.tugasakhir.Chat.ChatFragment
 import com.project.tugasakhir.Map.MapFragment
 import com.project.tugasakhir.Cart.CartFragment
