@@ -29,4 +29,12 @@
     <string name="pengguna">Pengguna</string>
     <string name="isi_pesan">Isi Pesan ...</string>
     <string name="icon_profil">Icon Profil</string>
+    <string name="status_order">Status Order :</string>
+    <string name="Tanggal">Tanggal :</string>
+    <string name="Nomor">Nomor Orderan :</string>
+    <string name="no_orderan">1329012930</string>
+    <string name="statusorder">Selesai</string>
+    <string name="tanggal_order">01-April-2025</string>
+    <string name="waktu">19.00 WITA</string>
+    <string name="waktu_order">Waktu :</string>
 </resources>
