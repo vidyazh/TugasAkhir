@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Cart.KeranjangPesananActivity"
+    tools:context=".Cart.Penjual.PenawaranPenjualActivity"
     tools:ignore="MissingClass"
     android:id="@+id/main">
 
@@ -63,49 +63,7 @@
                     android:textSize="14sp"
                     android:layout_gravity="start"/>
 
-                <!-- Rating -->
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="start"
-                    android:layout_marginTop="4dp">
-
-                    <com.google.android.material.textview.MaterialTextView
-                        android:id="@+id/txt_nilai"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Nilai: "
-                        android:textColor="@android:color/black"
-                        android:textSize="14sp"/>
-
-                    <com.google.android.material.textview.MaterialTextView
-                        android:id="@+id/nilai_pengguna"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/nilai_pengguna"
-                        android:textColor="@android:color/black"
-                        android:textSize="14sp"/>
-                </LinearLayout>
             </LinearLayout>
-
-            <!-- User order number -->
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/pemesanan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/pemesanan"
-                android:textColor="@android:color/black"
-                android:textSize="14sp"
-                android:layout_gravity="center_vertical"/>
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/banyak_pemesanan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/Banyak_pemesanan"
-                android:textColor="@android:color/black"
-                android:textSize="14sp"
-                android:layout_gravity="center_vertical"/>
         </LinearLayout>
 
         <com.google.android.material.divider.MaterialDivider
@@ -239,7 +197,7 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="150dp"
             android:layout_below="@+id/divider_2"
             android:layout_marginTop="10dp"
             android:id="@+id/rv_produk_keranjang"
@@ -252,87 +210,31 @@
             android:layout_marginTop="10dp"
             android:id="@+id/divider_3" />
 
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/tambah_produk_baru"
-            android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/dark_grey"
-            android:textColor="@color/black"
-            android:layout_marginTop="8dp"
-            />
-        <com.google.android.material.divider.MaterialDivider
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="8dp"
-            android:id="@+id/divider_4" />
         <RelativeLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/rl_tawarkan_harga"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="15dp">
-
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/divider_3">
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/metode_pengiriman"
-            android:textStyle="bold"
-            android:id="@+id/metode_pengiriman"
-            />
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_below="@+id/metode_pengiriman"
-                >
-
-                <RadioButton
-                    android:id="@+id/radio_ambil_ditempat"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Ambil ditempat"
-                    android:padding="12dp"
-                    android:textSize="14sp"
-                    android:checked="true"
-                    />
-
-
-            </RadioGroup>
-        </RelativeLayout>
-        <com.google.android.material.divider.MaterialDivider
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="8dp"
-            android:id="@+id/divider_5" />
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp">
+            android:id="@+id/menawarkan_harga"
+            android:text="@string/menawarkan_harga"
+            android:textSize="15sp"
+            android:textStyle="bold" />
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/pesan_kepada_penjual"
-                android:layout_marginTop="8dp"
-                android:textStyle="bold"
-                android:id="@+id/pesan_kepada_penjual"
-                />
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_marginEnd="15dp"
-                android:hint="Isi Pesan ..."
-                android:background="@drawable/border_backround"
-                android:layout_below="@+id/pesan_kepada_penjual" />
+                android:id="@+id/harga_tawaran"
+                android:text="@string/harga_tawaran"
+                android:textSize="30sp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/menawarkan_harga"
+                android:textStyle="bold" />
         </RelativeLayout>
-
-        <com.google.android.material.divider.MaterialDivider
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="8dp"
-            android:id="@+id/divider_6" />
-
         <LinearLayout
             android:id="@+id/bottom_layout"
             android:layout_width="match_parent"
@@ -343,56 +245,22 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_alignParentBottom="true">
 
-            <!-- Menampilkan item_count dan total_price secara horizontal -->
-            <RelativeLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="parent"
-                android:gravity="start"
-                android:layout_marginBottom="8dp">
 
-                <com.google.android.material.textview.MaterialTextView
-                    android:id="@+id/item_count"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Item: 2"
-                    android:textColor="@android:color/white"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="16dp" />
-
-                <com.google.android.material.textview.MaterialTextView
-                    android:id="@+id/Harga"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:text="@string/harga"
-                    android:layout_marginEnd="50dp"
-                    android:textColor="@android:color/white"
-                    android:textSize="14sp" />
-                <com.google.android.material.textview.MaterialTextView
-                    android:id="@+id/HargaBarang"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:text="@string/harga_barang"
-                    android:textColor="@android:color/white"
-                    android:textSize="14sp" />
-            </RelativeLayout>
-
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/confirm_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Konfirmasi Pesanan"
+                android:text="@string/proses_pesanan"
                 android:layout_marginTop="16dp"/>
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/cancel_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Batalkan Pesanan"
+                android:text="@string/tolak_tawaran_harga"
                 android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/light_grey"
                 android:layout_marginBottom="16dp"/>
         </LinearLayout>
     </LinearLayout>

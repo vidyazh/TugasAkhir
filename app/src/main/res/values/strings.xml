@@ -10,8 +10,8 @@
     <string name="tersedia">Tersedia</string>
     <string name="jumlah_tersedia">Jumlah Tersedia</string>
     <string name="kg">(/kg)</string>
-    <string name="harga">Harga</string>
-    <string name="_50_000">50.000</string>
+    <string name="harga">Harga :</string>
+    <string name="harga_barang">50.000</string>
     <string name="_50kg">50Kg</string>
     <string name="nama_pengguna">Nama Pengguna</string>
     <string name="pekerjaan">Pekerjaan</string>
@@ -37,4 +37,13 @@
     <string name="tanggal_order">01-April-2025</string>
     <string name="waktu">19.00 WITA</string>
     <string name="waktu_order">Waktu :</string>
+    <string name="tambah_produk_baru">Tambah Produk Baru</string>
+    <string name="pesan_kepada_penjual">Pesan Kepada Penjual :</string>
+    <string name="pembeli">Pembeli</string>
+    <string name="proses_pesanan">Proses Pesanan</string>
+    <string name="batalkan_proses_pesanan">Batalkan Proses Pesanan</string>
+    <string name="menawarkan_harga">Menawarkan Harga :</string>
+    <string name="harga_tawaran">Rp. 200.000</string>
+    <string name="tolak_tawaran_harga">Tolak Tawaran Harga</string>
+    <string name="metode_pembayaran">Metode Pembayaran :</string>
 </resources>

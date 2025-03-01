@@ -63,49 +63,7 @@
                     android:textSize="14sp"
                     android:layout_gravity="start"/>
 
-                <!-- Rating -->
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="start"
-                    android:layout_marginTop="4dp">
-
-                    <com.google.android.material.textview.MaterialTextView
-                        android:id="@+id/txt_nilai"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Nilai: "
-                        android:textColor="@android:color/black"
-                        android:textSize="14sp"/>
-
-                    <com.google.android.material.textview.MaterialTextView
-                        android:id="@+id/nilai_pengguna"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/nilai_pengguna"
-                        android:textColor="@android:color/black"
-                        android:textSize="14sp"/>
-                </LinearLayout>
             </LinearLayout>
-
-            <!-- User order number -->
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/pemesanan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/pemesanan"
-                android:textColor="@android:color/black"
-                android:textSize="14sp"
-                android:layout_gravity="center_vertical"/>
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/banyak_pemesanan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/Banyak_pemesanan"
-                android:textColor="@android:color/black"
-                android:textSize="14sp"
-                android:layout_gravity="center_vertical"/>
         </LinearLayout>
 
         <com.google.android.material.divider.MaterialDivider
@@ -272,30 +230,29 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp">
 
-        <com.google.android.material.textview.MaterialTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/metode_pengiriman"
-            android:textStyle="bold"
-            android:id="@+id/metode_pengiriman"
-            />
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/metode_pembayaran"
+                android:textStyle="bold"
+                android:id="@+id/metode_pembayaran"
+                />
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_below="@+id/metode_pengiriman"
+                android:layout_below="@+id/metode_pembayaran"
                 >
 
                 <RadioButton
                     android:id="@+id/radio_ambil_ditempat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Ambil ditempat"
+                    android:text="Bayar Di Tempat"
                     android:padding="12dp"
                     android:textSize="14sp"
                     android:checked="true"
                     />
-
 
             </RadioGroup>
         </RelativeLayout>
@@ -380,19 +337,21 @@
                     android:textSize="14sp" />
             </RelativeLayout>
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/confirm_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Konfirmasi Pesanan"
+                android:text="@string/proses_pesanan"
                 android:layout_marginTop="16dp"/>
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/cancel_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Batalkan Pesanan"
+                android:text="@string/batalkan_proses_pesanan"
                 android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/light_grey"
                 android:layout_marginBottom="16dp"/>
         </LinearLayout>
     </LinearLayout>
