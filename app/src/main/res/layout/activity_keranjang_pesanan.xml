@@ -270,27 +270,29 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="15dp">
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            >
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/metode_pengiriman"
+            android:text="@string/metode_pembayaran"
             android:textStyle="bold"
-            android:id="@+id/metode_pengiriman"
+            android:id="@+id/metode_pembayaran"
             />
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_below="@+id/metode_pengiriman"
+                android:layout_below="@+id/metode_pembayaran"
                 >
 
                 <RadioButton
                     android:id="@+id/radio_ambil_ditempat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Ambil ditempat"
+                    android:text="Bayar ditempat"
                     android:padding="12dp"
                     android:textSize="14sp"
                     android:checked="true"

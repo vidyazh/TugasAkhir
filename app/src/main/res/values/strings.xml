@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">TugasAkhir</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="gambar_produk">Gambar Produk</string>
     <string name="nama_produk">Nama Produk</string>
@@ -46,4 +45,10 @@
     <string name="harga_tawaran">Rp. 200.000</string>
     <string name="tolak_tawaran_harga">Tolak Tawaran Harga</string>
     <string name="metode_pembayaran">Metode Pembayaran :</string>
+    <string name="Bahasa">Bahasa</string>
+    <string name="no_handphone">No Handphone</string>
+    <string name="tema">Tema</string>
+    <string name="allorder">All Orders</string>
+    <string name="Kondisi_Produk">Kondisi Produk</string>
+    <string name="Simpan">Simpan Produk</string>
 </resources>

@@ -31,6 +31,7 @@
                 android:layout_height="60dp"
                 android:layout_marginEnd="10dp"
                 android:layout_gravity="center_vertical"
+                android:src="@drawable/avatar"
                 android:clipToOutline="true"
                 android:shape="oval"/>
 
@@ -197,7 +198,7 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="250dp"
             android:layout_below="@+id/divider_2"
             android:layout_marginTop="10dp"
             android:id="@+id/rv_produk_keranjang"
